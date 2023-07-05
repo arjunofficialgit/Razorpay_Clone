@@ -9,9 +9,22 @@
     <title>Razorpay</title>
     <style>
       .corefeaturesection{
-        background-size: 100% 100%;
+        background-size: 1600px 100%;
         padding-top: 12rem;
         padding-bottom: 12rem;
+      }
+      .companiesList{
+        animation: 10s infinite linear moveCompany;
+
+
+      }
+      @keyframes moveCompany {
+        0%{
+          top: 0;
+        }
+        100%{
+          top: -50%;
+        }
       }
     </style>
 </head>
@@ -223,12 +236,12 @@
                 class="max-w-[600px] absolute right-0 bottom-0">
             </div>
 
-            <div class="w-full grid grid-cols-3 gap-4 mt-10">
+            <div class="w-full grid grid-cols-3 gap-4 mt-10 ">
                 <!--Box1-->
-                <div class="w-full min-h-[15rem] relative cursor-pointer">
+                <div class="w-full min-h-[15rem] relative cursor-pointer hover:shadow-sm group-hover:z-10 ">
                     <img src="./images/payment-link-icon.svg" alt=""
-                    class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
-                    transition-all duration-200">
+                    class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8] 
+                    transition-all">
                     
                     <!--box shape-->
                     <svg
@@ -236,7 +249,7 @@
                         xmlns="http://www.w3.org/2000/svg"
                         preserveAspectRatio="none"
                         class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200"
-                        style="stroke-opacity: 0.15"
+                        style="stroke-opacity: 0.15;"
                          >
                   <path
                         d="m 0 6 
@@ -255,7 +268,7 @@
                     </svg>
     
                     <!--box -content -->
-                    <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                    <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8 ">
                         <!--text part-->
                         <div>
                             <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]">Payment Links</h3>
@@ -279,7 +292,7 @@
     
                 </div>
                 <!--Box2-->
-                <div class="w-full min-h-[15rem] relative cursor-pointer">
+                <div class="w-full min-h-[15rem] relative cursor-pointer group-hover:shadow">
                     <img src="./images/payment-link-icon.svg" alt=""
                     class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
                     transition-all duration-200">
@@ -656,7 +669,7 @@
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4 my-14">
                   <!--box1-->
                   <div
-                  class="w-full min-h-[15rem] relative cursor-pointer featureCard2"
+                  class="w-full min-h-[15rem] relative cursor-pointer featureCard1"
                 >
                   <!-- box icon -->
                   <img
@@ -754,7 +767,7 @@
                       <h3
                         class="font-mullish font-extrabold text-white leading-[1.2] text-[1.375rem]"
                       >
-                        Current Account
+                        Payouts
                       </h3>
                       <p class="font-mullish text-grayText mt-6">
                         Current accounts for fast-growing businesses, supported by the
@@ -814,7 +827,7 @@
                       <h3
                         class="font-mullish font-extrabold text-white leading-[1.2] text-[1.375rem]"
                       >
-                        Current Account
+                        Payroll
                       </h3>
                       <p class="font-mullish text-grayText mt-6">
                         Current accounts for fast-growing businesses, supported by the
@@ -1081,6 +1094,29 @@ bg-no-repeat bg-cover bg-center relative  corefeaturesection">
 
         </div>
     </div>
+</section>
+
+<!-- Join RazarPay Section -->
+<section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[200px] -z-[100]">
+  <div class="w-11/12 max-w-[1080px] mx-auto relative flex flex-row">
+    <!-- left part -->
+    <div class="flex flex-col justify-center max-w-[calc(100%-500px)]">
+      <h2 class="font-mullish font-bold text-2xl textdeep ">Join the 50,00,000+ business using Razorpay</h2>
+      <div class="w-6 h-1 bg-greenLight mx-auto mb-10 my-4"></div>
+      <p class="font-mullish opacity-80 ">We make it easier for you to focus on building great producs while we work on simplify your payments. Become one of us by joining thousands of our happy users and simplify the online payment experience for your customers.</p>
+      <p class="font-mullish mt-6 opacity-80">Focus on your business while we handle the complexities of payments for you</p>
+    </div>
+    <!-- Right Part  -->
+    <div class="h-[500px] w-[500px] relative overflow-hidden">
+      <div style="background: linear-gradient(180deg,#f4f8ff, #fff0 );" class="absolute w-full h-[150px] top-0 z-50">
+      </div>
+
+      <img src="./images/comanies.png" class="absolute h-auto companiesList ">
+      <div style="background: linear-gradient(0deg,#f4f8ff, #fff0 );" class="absolute w-full h-[150px] bottom-0">
+
+      </div>
+    </div>
+  </div>
 </section>
 
 
